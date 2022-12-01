@@ -8,21 +8,28 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://wallpaperaccess.com/full/6385972.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1DYQznPeDoE8mARTXObHZVlOxhJfFTrvVmw&usqp=CAU"
           alt=""
         />
+        <div className="home__row">
+          {/*Product*/}
+          <Product />
+          {/*Product*/}
+          <Product />
+        </div>
+        <div className="home__row">
+          {/*Product*/}
+          <Product />
+          {/*Product*/}
+          <Product />
+          {/*Product*/}
+          <Product />
+        </div>
+        <div className="home__row">
+          {/*Product*/}
+          <Product />
+        </div>
       </div>
-      <div className="home__row">
-        {/*Product*/}
-        <Product />
-        {/*Product*/}
-      </div>
-      <div className="home__row">
-        {/*Product*/}
-        {/*Product*/}
-        {/*Product*/}
-      </div>
-      <div className="home__row">{/*Product*/}</div>
     </div>
   );
 }

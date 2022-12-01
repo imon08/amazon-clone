@@ -1,7 +1,7 @@
 import React from "react";
 import "./Product.css";
 
-function Product() {
+function Product(title, image, price, rating) {
   return (
     <div className="product">
       <div className="product__info">
@@ -10,7 +10,14 @@ function Product() {
           <small>$</small>
           <strong>2.33</strong>
         </p>
+        <div className="product__rating">
+          <p>⭐</p>
+          <p>⭐</p>
+          <p>⭐</p>
+        </div>
       </div>
+      <img src="https://m.media-amazon.com/images/I/51aoe6r1ibL.jpg" alt="" />
+      <button>Add to Basket</button>
     </div>
   );
 }
