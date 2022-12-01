@@ -2,16 +2,25 @@ import "./App.css";
 import Header from "./Header";
 import "./Header.css";
 import Home from "./Home";
+import Checkout from "./Checkout";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      {/* Header */}
+    //BEM
+    <Router>
+      <div className="app">
       <Header />
-      {/* Home */}
-      <Home />
-    </div>
+        <Switch>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
 export default App;
