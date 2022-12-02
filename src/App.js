@@ -2,8 +2,8 @@ import "./App.css";
 import Header from "./Header";
 import "./Header.css";
 import Home from "./Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Checkout from "./Checkout";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,14 +11,10 @@ function App() {
     <Router>
       <div className="app">
       <Header />
-        <Switch>
-          <Route path="/checkout">
-            <Checkout />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/checkout" element={<Checkout />} /> 
+          <Route path="/"  element={<Home />} />           
+        </Routes>
       </div>
     </Router>
   );
