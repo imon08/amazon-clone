@@ -10,10 +10,10 @@ function App() {
     //BEM
     <Router>
       <div className="app">
-      <Header />
+        <Header />
         <Routes>
-          <Route path="/checkout" element={<Checkout />} /> 
-          <Route path="/"  element={<Home />} />           
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
