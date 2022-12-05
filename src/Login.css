@@ -53,6 +53,12 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+  cursor: pointer;
+}
+
+.login__signInButton:hover,
+.login__signInButton:active {
+  background-color: #aa8e46;
 }
 
 .login__registerButton {
@@ -63,4 +69,10 @@
   margin-top: 10px;
   border-color: darkgrey;
   color: #111;
+  cursor: pointer;
+}
+
+.login__registerButton:hover,
+.login__registerButton:active {
+  background-color: white;
 }

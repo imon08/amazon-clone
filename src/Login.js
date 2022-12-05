@@ -1,19 +1,40 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "./firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import "./Login.css";
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const signIn = (e) => {
     e.preventDefault();
     // fancy firebase
+    signInWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        //it successfully created a new user with email and password
+        navigate("/");
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (e) => {
     e.preventDefault();
     // fancy firebase
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        //it successfully created a new user with email and password
+        console.log(auth);
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
