@@ -33,7 +33,7 @@ function Home() {
           {/*Product*/}
           <Product
             id="1236"
-            title="Babique Elephant Sitting Plush Soft Toy Cute Kids Animal Home Decor Boys/Girls (Blue, 30 cm)"
+            title="Babique Elephant Sitting Plush Soft Toy Cute Kids Animal Home Decor"
             price={551}
             image="https://m.media-amazon.com/images/I/71sh-Yt3EmL._SY355_.jpg"
             rating={3}
@@ -41,7 +41,8 @@ function Home() {
           {/*Product*/}
           <Product
             id="1237"
-            title="Lean Startup: How to Apply the Lean Startup Methodology to Innovate, Accelerate, and Create Successful Businesses (Lean Guides with Scrum, Sprint, Kanban, DSDM, XP & Crystal)"            price={2.33}
+            title="Lean Startup: How to Apply the Lean Startup Methodology to Innovate"            
+            price={200}
             image="https://m.media-amazon.com/images/I/51aoe6r1ibL.jpg"
             rating={3}
           />
@@ -49,7 +50,7 @@ function Home() {
           <Product
             id="1238"
             title="Storio Blaze Storm Hot Fire Soft Bullet Gun Toy with 10 Safe Soft Foam Bullets"
-            price={2.33}
+            price={890}
             image="https://m.media-amazon.com/images/I/71HwYi43pUL._SY355_.jpg"
             rating={5}
           />
